@@ -276,44 +276,9 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- SmoothScroll -->
 <script src="js/smoothscroll.js"></script>
-<!-- Styling Scrollbar -->
-<!--<link rel="stylesheet" href="js/jScrollPane/jquery.jscrollpane.css">
-<script src="js/jScrollPane/jquery.jscrollpane.min.js"></script>
-<script src="js/jScrollPane/jquery.mousewheel.js"></script>
-<script src="js/jScrollPane/mwheelIntent.js"></script>-->
 
-<script>
-    jQuery(document).ready(function(){
-        jQuery('.close').click(function(){
-            jQuery(this).closest('.modal-form').animate({opacity:"hide"}, 400);
-            jQuery('.btn-open').show();
-            jQuery('body').removeClass('bg_shadow');
-        });
-        jQuery('.btn-open').click(function(){
-            jQuery(this).hide()
-            jQuery('body').addClass('bg_shadow');
-        });
-        jQuery('.btn-open.menu').click(function(){
-            jQuery(this).closest('.wrapper').find('#main-menu').animate({left:0, opacity:"show"}, 700);
-        });
-        jQuery('.btn-open.reviews').click(function(){
-            jQuery(this).closest('.wrapper').find('#reviews').animate({right:0, opacity:"show"}, 700);
-        });
-        jQuery('.desc').click(function(){
-            jQuery(this).closest('.wrapper').find('#description').animate({right:0, opacity:"show"}, 700);
-            jQuery(this).closest('.modal-form').animate({opacity:"hide"}, 400);
-        });
-        jQuery('.about').click(function(){
-            jQuery(this).closest('.wrapper').find('#about_us').animate({right:0, opacity:"show"}, 700);
-            jQuery(this).closest('.modal-form').animate({opacity:"hide"}, 400);
-        });
-        jQuery('.products').click(function(){
-            jQuery(this).closest('.wrapper').find('#products').animate({right:0, opacity:"show"}, 700);
-            jQuery(this).closest('.modal-form').animate({opacity:"hide"}, 400);
-        });
+<script src="js/scripts.js"></script>
 
-        /*jQuery('.content-form').jScrollPane();*/
-    });
-</script>
+
 </body>
 </html>
